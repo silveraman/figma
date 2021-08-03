@@ -1,0 +1,57 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(gradient.png);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    font-family: poppins;
+    font-weight: 600;
+    
+}
+header{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 70px;
+}
+
+.nav-area{
+    list-style: none;
+    color: #9B8055;
+    
+
+}
+.nav-area li{
+    float: right;
+    /* text-decoration: none; */
+    list-style: none;
+    display: inline-block;
+    padding: 1rem;
+    font-size: 1.25em;
+
+}
+.rhs img{
+    display: inline-block;
+    padding: 0 10px;
+}
+.grp12{
+    display: block;
+    text-align: center;
+    transform: translateY(55%);
+    font-family: Roboto;
+    font-size: 1.875em;
+}
+
+
+
+
+
