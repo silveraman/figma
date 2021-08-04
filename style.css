@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
 }
-.container{
+.cont{
     position: relative;
     width: 100%;
     height: 100vh;
@@ -12,7 +12,7 @@
     background-image: linear-gradient(hsla(0, 0%, 97%, .9), #9B8055);
     /* background: url(/images/gradient-1.png); */
 }
-/* Header part of body*/
+/* Header part */
 header{
     position: relative;
     display: flex;
@@ -38,11 +38,11 @@ header{
 #vector-3{
     padding: 0px;
 }
-.bar {
+.bars {
     width: 28px;
     cursor: pointer;
 }
-.bar_lines{
+.bar-lines{
     position: absolute;
     width: 28px;
     height: 3px;
@@ -57,11 +57,11 @@ header{
 #bar-3{
     margin-top: 12px;
 }
-/* Navigation */
-.nav{
+/* Nav items */
+.nav_links{
     display: none;
 }
-.toggle_nav{
+.toggle-nav{
     display: none;
     background-color: #ffffff;
 
@@ -70,12 +70,12 @@ header{
     z-index: 999;
     width: 100%;
 }
-.toggle_nav li{
+.toggle-nav li{
     list-style: none;
     padding: 15px;
     text-align: center;
 }
-.toggle_nav li a{
+.toggle-nav li a{
     text-decoration: none;
     color: #000000;
     font-weight: bold;
@@ -84,10 +84,10 @@ header{
     line-height: 23px;
     
 }
-.toggle_nav li:hover{
+.toggle-nav li:hover{
     background-image: linear-gradient(to right, hsla(0, 0%, 97%, .9), #9B8055,hsla(0, 0%, 97%, .9) );
 }
-/* Main body content */
+/*  body content */
 main{
     position: absolute;
     display: flex;
@@ -100,14 +100,14 @@ main{
     width: 100vw;
     animation: fadeIn 2s;
 }
-.caption{
+.text{
     font-family: Roboto;
     font-size: 20px;
     line-height: 23px;
     text-align: center;
     padding: 0 25px;
 }
-/* This area is for animation */
+/* animation begins */
 @keyframes fadeIn{
     from{
         opacity: 0;
@@ -116,7 +116,7 @@ main{
         opacity: 1;
     }
 }
-/* for desktop site */
+/* desktop view */
 @media only screen and (min-width: 768px) {
     .container{
         width: 100%;
@@ -128,19 +128,19 @@ main{
         height: 35px;
         left: 5%
     }
-    .bar {
+    .bars {
         display: none;
     }
-    .nav{
+    .nav_links{
         display: flex;
         align-items: center;
         justify-content: center;
     }
-    .nav li{
+    .nav_links li{
         list-style: none;
         padding: 0%;
     }
-    .nav li a{
+    .nav_links li a{
         text-decoration: none;
         margin-right: 2rem;
         font-family: Roboto;
@@ -148,10 +148,10 @@ main{
         line-height: 23px;
         color: #9B8055;
     }
-    .nav li a:hover{
+    .nav_links li a:hover{
         border-bottom: 2px solid #9B8055;
     }
-    .toggle_nav, .toggle_nav li{
+    .toggle-nav, .toggle-nav li{
         display: none;
         border: none;
     }
