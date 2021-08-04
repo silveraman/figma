@@ -8,59 +8,74 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="container">
+    <div class="cont">
         <header>
-            <a href="#"><img src="logo1.svg" id="logo" alt="logo"></a>  
-            <div class="nav">
-                <li><a href="#">Jute Bags</a></li>
-                <li><a href="#">Gifts</a></li>
-                <li><a href="#">About us</a></li>
+            <a href="#">
+                <img src="logo1.svg" id="logo" alt="logo">
+            </a>  
+            <div class="nav_links">
+                <li>
+                    <a href="#">Jute Bags</a>
+                </li>
+                <li>
+                    <a href="#">Gifts</a>
+                </li>
+                <li>
+                    <a href="#">About us</a>
+                </li>
             </div>
             <div class="icons">
-                <div class="vector">
-                    <a href="#"><img id="vector-1" src="Vector.png" alt="contact"></a>
-                    <a href="#"><img id="vector-2" src="Vector(1).svg" alt="profile"></a>
-                    <a href="#"><img id="vector-3" src="Vector(2).svg" alt="cart"></a>
+                <div class="rhs">
+                    <a href="#">
+                        <img id="vector-1" src="Vector.png" alt="contact">
+                    </a>
+                    <a href="#">
+                        <img id="vector-2" src="Vector(1).svg" alt="profile">
+                    </a>
+                    <a href="#">
+                        <img id="vector-3" src="Vector(2).svg" alt="cart">
+                    </a>
                 </div>
                 <div>
-                    <a href="#" class="bar">
-                        <span class="bar_lines" id="bar-1"></span>
-                        <span class="bar_lines" id="bar-2"></span>
-                        <span class="bar_lines" id="bar-3"></span>
+                    <a href="#" class="bars">
+                        <span class="bar-lines" id="bar-1"></span>
+                        <span class="bar-lines" id="bar-2"></span>
+                        <span class="bar-lines" id="bar-3"></span>
                     </a>
                 </div>
             </div>
         </header>
-        <ul class="toggle_nav">
-            <li><a href="#">Jute Bags</a></li>
-            <li><a href="#">Gifts</a></li>
-            <li><a href="#">About us</a></li>
+        <ul class="toggle-nav">
+            <li>
+                <a href="#">Jute Bags</a>
+            </li>
+            <li>
+                <a href="#">Gifts</a>
+            </li>
+            <li>
+                <a href="#">About us</a>
+            </li>
         </ul>
         <main>
-            <div class="caption">
-                <p>
-                    A jute bag can save something?
-                </p>
+            <div class="text">
+                <p>A jute bag can save something?</p> 
             </div>
             <div>
                 <img src="img9.png" alt="jute bag picture">
             </div>
-            <div class="caption">
-                <p>
-                    Buy a jute bag and avoid plastic
-                </p>
+            <div class="text">
+                <p>Buy a jute bag and avoid plastic</p>
             </div>
         </main>
     </div>
     <script>
-        const a = document.querySelector('.bar');
-        const b = document.querySelector('.toggle_nav');
+        const a = document.querySelector('.bars');
+        const b = document.querySelector('.toggle-nav');
 
         a.addEventListener('click', ()=>{
             if(b.style.display == 'none'){
                 b.style.display = 'block';
-            } 
-            else{
+            } else{
                 b.style.display = 'none';
             }
         });
