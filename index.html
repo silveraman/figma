@@ -5,80 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>NavBar</title>
 </head>
 <body>
-    <div class="cont">
-        <header>
-            <a href="#">
-                <img src="logo1.svg" id="logo" alt="logo">
-            </a>  
-            <div class="nav_links">
-                <li>
-                    <a href="#">Jute Bags</a>
-                </li>
-                <li>
-                    <a href="#">Gifts</a>
-                </li>
-                <li>
-                    <a href="#">About us</a>
-                </li>
-            </div>
-            <div class="icons">
-                <div class="rhs">
-                    <a href="#">
-                        <img id="vector-1" src="Vector.png" alt="contact">
-                    </a>
-                    <a href="#">
-                        <img id="vector-2" src="Vector(1).svg" alt="profile">
-                    </a>
-                    <a href="#">
-                        <img id="vector-3" src="Vector(2).svg" alt="cart">
-                    </a>
-                </div>
-                <div>
-                    <a href="#" class="bars">
-                        <span class="bar-lines" id="bar-1"></span>
-                        <span class="bar-lines" id="bar-2"></span>
-                        <span class="bar-lines" id="bar-3"></span>
-                    </a>
-                </div>
-            </div>
-        </header>
-        <ul class="toggle-nav">
-            <li>
-                <a href="#">Jute Bags</a>
-            </li>
-            <li>
-                <a href="#">Gifts</a>
-            </li>
-            <li>
-                <a href="#">About us</a>
-            </li>
-        </ul>
-        <main>
-            <div class="text">
-                <p>A jute bag can save something?</p> 
-            </div>
-            <div>
-                <img src="img9.png" alt="jute bag picture">
-            </div>
-            <div class="text">
-                <p>Buy a jute bag and avoid plastic</p>
-            </div>
-        </main>
-    </div>
-    <script>
-        const a = document.querySelector('.bars');
-        const b = document.querySelector('.toggle-nav');
+    <header>
+       <nav>              <!-- orignally site-nav -->
+        <img src="assets/logo.png" alt="logo">
 
-        a.addEventListener('click', ()=>{
-            if(b.style.display == 'none'){
-                b.style.display = 'block';
-            } else{
-                b.style.display = 'none';
-            }
-        });
-    </script>
+        <ul class="nav_menu">
+          <li><a href="#">Jute Bags</a></li> 
+          <li><a href="#">Gifts</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Pricing</a></li>
+        </ul>
+
+         <div class="nav_icons">     <!-- orignaly site -->
+          <a href="#"><img src="assets/Vector-1.png" alt="icon"></a>
+          <a href="#"><img src="assets/Vector-2.png" alt="icon"></a>
+          <a href="#"><img src="assets/Vector-3.png" alt="icon"></a>
+          <div class="menu-toggle">
+            <div class="hamburger"></div>
+          </div>
+        </div> 
+          </nav>
+
+          <!-- <div class="site">
+            <a href="#"><img src="assets/Vector-1.png" alt="icon"></a>
+            <a href="#"><img src="assets/Vector-2.png" alt="icon"></a>
+            <a href="#"><img src="assets/Vector-3.png" alt="icon"></a>
+          </div>  -->
+          
+          <!-- <div class="menu-toggle">
+            <div class="hamburger"></div>
+          </div> -->
+        </div>
+        
+    </header>
+
+        <script src="main.js"></script>
 </body>
+
 </html>
